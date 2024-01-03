@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-size: 2em;
+            margin: 10px 0px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        input#pais{
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        input#botao{
+            margin-bottom: 10px;
+            width: 100px;
+            height: 25px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verifique a sua Nacionalidade</h1>
+    <p>Digite o seu país de origem:</p>
+    <input type="text" name="ipais" id="pais"><br/>
+    <input type="button" id="botao" value="Verificar">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        var pais = window.document.getElementById("pais");
+        var res = window.document.getElementById("res");
+        var b = window.document.getElementById("botao");
+        b.addEventListener("click", checar);
+        
+        function checar(){
+            res.innerHTML = `<p>Seu país é ${pais.value}</p>`
+            if(pais.value == "Brasil" || pais.value == "brasil"){
+                res.innerHTML += "<p>Você é Brasileiro</p>";
+            }else{
+                res.innerHTML += "<p>Você é Estrangeiro</p>";
+            }
+        }
+    </script>
+</body>
+</html>
