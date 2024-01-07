@@ -17,15 +17,15 @@ function verificar(){
             img.style.backgroundImage = "url('imagem/bebe-m.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é um homem de ${idade} anos`;
-        }else if(idade > 3 && idade < 13){
+        }else if(idade < 13){
             img.style.backgroundImage = "url('imagem/crianca-m.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é um homem de ${idade} anos`;
-        }else if(idade >= 13 && idade < 18){
+        }else if(idade < 18){
             img.style.backgroundImage = "url('imagem/ado-m.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é um homem de ${idade} anos`;
-        }else if(idade >= 18 && idade < 65){
+        }else if(idade < 65){
             img.style.backgroundImage = "url('imagem/adulto-m.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é um homem de ${idade} anos`;
@@ -43,15 +43,15 @@ function verificar(){
             img.style.backgroundImage = "url('imagem/bebe-f.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é uma mulher de ${idade} anos`;
-        }else if(idade > 3 && idade < 13){
+        }else if(idade < 13){
             img.style.backgroundImage = "url('imagem/crianca-f.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é uma mulher de ${idade} anos`;
-        }else if(idade >= 13 && idade < 18){
+        }else if(idade < 18){
             img.style.backgroundImage = "url('imagem/ado-f.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é uma mulher de ${idade} anos`;
-        }else if(idade >= 18 && idade < 65){
+        }else if(idade < 65){
             img.style.backgroundImage = "url('imagem/adulto-f.jpg')";
             img.style.display = "block";
             txt.innerHTML = `Você é uma mulher de ${idade} anos`;
