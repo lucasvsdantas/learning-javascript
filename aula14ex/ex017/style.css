@@ -27,7 +27,7 @@ div#texto{
 
     font-weight: bold;
 }
-section#tabuada{
+select#itabuada{
     height: 200px;
     width: 300px;
     line-height: 10px;
