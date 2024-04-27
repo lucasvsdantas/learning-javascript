@@ -1,10 +1,12 @@
 let nums = [];
 
 function adic(a, b){
+    /*Função para adicionar elementos no HTML*/
     a.appendChild(b);
 }
 
 function somar(a){
+    /*Função para somar itens do Array*/
     let resultado = 0;
     for(let i = 0; i < a.length; i++){
         resultado+=a[i];
@@ -13,6 +15,7 @@ function somar(a){
 }
 
 function fazerMedia(a){
+    /*Função para fazer a média dos itens do Array, junto da função somar*/
     let resultado = somar(a);
     return resultado/a.length;
 }
@@ -36,12 +39,20 @@ function adicionar(){
     for(let i = 0; i < nums.length; i++){
         let item = document.createElement('option');
         item.text = `Valor ${nums[i]} adicionado`;
-        item.value = `caixa${i}`;
         adic(caixa, item);
     }
+
+    /* Zerar input e focar no input para o próximo valor*/
+    elemento.value = '';
+    elemento.focus();
 }
 
 function result(){
+    if(nums.length == 0){
+        alert("Adicione algum elemento antes de finalizar");
+        return;
+    }
+
     let divi = document.getElementById("iresultado");
     let soma = somar(nums);
     let media = fazerMedia(nums);
