@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(145, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    position: relative;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.432);
+}
+div#texto{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#outadnum{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    line-height: 10px;
+}
+
+#finalizar{
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}
